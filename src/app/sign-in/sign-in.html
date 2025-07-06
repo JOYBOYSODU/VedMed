@@ -1,0 +1,150 @@
+  <div class="container">
+        <div class="left-panel">
+            <div class="logo">
+                <div class="logo-icon">⚕</div>
+                <span>VedMed</span>
+            </div>
+            <div class="tagline">
+                Streamline your healthcare workflow with our comprehensive EHR solution
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <div>
+                        <strong>Smart Dashboard</strong><br>
+                        Comprehensive patient management
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <div>
+                        <strong>Patient Portal</strong><br>
+                        Easy access to medical records
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <div>
+                        <strong>HIPAA Compliant</strong><br>
+                        Secure & encrypted data storage
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">☁️</div>
+                    <div>
+                        <strong>Cloud-Based</strong><br>
+                        Access anywhere, anytime
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="form-container">
+                <div id="signInForm">
+                    <h2 class="form-title">Welcome Back</h2>
+                    <p class="form-subtitle">Sign in to your account</p>
+
+                    <div class="user-type-selector">
+                        <div class="user-type-btn active" data-type="patient">
+                            <div class="user-type-icon">👤</div>
+                            <div>Patient</div>
+                        </div>
+                        <div class="user-type-btn" data-type="doctor">
+                            <div class="user-type-icon">👨‍⚕️</div>
+                            <div>Doctor</div>
+                        </div>
+                    </div>
+
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" id="loginEmail" placeholder="Enter your email" required>
+                            <div class="error-message hidden" id="loginEmailError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <div class="password-input-container">
+                                <input type="password" class="form-input" id="loginPassword" placeholder="Enter your password" required>
+                                <button type="button" class="password-toggle" onclick="togglePassword('loginPassword')">👁️</button>
+                            </div>
+                            <div class="error-message hidden" id="loginPasswordError"></div>
+                        </div>
+
+                        <button type="submit" class="form-button">Sign In</button>
+                    </form>
+
+                    <div class="form-toggle">
+                        Don't have an account? <a href="#" onclick="showSignUp()">Sign up here</a>
+                    </div>
+                </div>
+
+                <div id="signUpForm" class="hidden">
+                    <h2 class="form-title">Create Account</h2>
+                    <p class="form-subtitle">Join MediCare EHR today</p>
+
+                    <div class="user-type-selector">
+                        <div class="user-type-btn active" data-type="patient">
+                            <div class="user-type-icon">👤</div>
+                            <div>Patient</div>
+                        </div>
+                        <div class="user-type-btn" data-type="doctor">
+                            <div class="user-type-icon">👨‍⚕️</div>
+                            <div>Doctor</div>
+                        </div>
+                    </div>
+
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-input" id="registerName" placeholder="Enter your full name" required>
+                            <div class="error-message hidden" id="registerNameError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" id="registerEmail" placeholder="Enter your email" required>
+                            <div class="error-message hidden" id="registerEmailError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-input" id="registerPhone" placeholder="Enter your phone number" required>
+                            <div class="error-message hidden" id="registerPhoneError"></div>
+                        </div>
+
+                        <div class="form-group" id="licenseGroup" style="display: none;">
+                            <label class="form-label">Medical License Number</label>
+                            <input type="text" class="form-input" id="registerLicense" placeholder="Enter your license number">
+                            <div class="error-message hidden" id="registerLicenseError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <div class="password-input-container">
+                                <input type="password" class="form-input" id="registerPassword" placeholder="Create a password" required>
+                                <button type="button" class="password-toggle" onclick="togglePassword('registerPassword')">👁️</button>
+                            </div>
+                            <div class="error-message hidden" id="registerPasswordError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Confirm Password</label>
+                            <div class="password-input-container">
+                                <input type="password" class="form-input" id="registerConfirmPassword" placeholder="Confirm your password" required>
+                                <button type="button" class="password-toggle" onclick="togglePassword('registerConfirmPassword')">👁️</button>
+                            </div>
+                            <div class="error-message hidden" id="registerConfirmPasswordError"></div>
+                        </div>
+
+                        <button type="submit" class="form-button">Create Account</button>
+                    </form>
+
+                    <div class="form-toggle">
+                        Already have an account? <a href="#" onclick="showSignIn()">Sign in here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
